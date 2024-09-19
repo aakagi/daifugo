@@ -1,0 +1,35 @@
+{
+  "name": "daifugo-node",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": {
+    "name": "Alex Akagi",
+    "email": "alex@akagi.co",
+    "url": "https://akagi.co",
+    "github": "https://github.com/aakagi"
+  },
+  "type": "module",
+  "module": "ESNext",
+  "scripts": {
+    "dev": "nodemon --ext 'ts' --watch 'src' --exec yarn start",
+    "start": "node --import @swc-node/register/esm-register src/index.ts"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "debug": "4.3.7",
+    "dotenv": "16.4.5",
+    "dotenv-expand": "11.0.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@swc-node/register": "^1.10.9",
+    "@swc/core": "^1.7.26",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "22.5.5",
+    "eslint": "^9.10.0",
+    "nodemon": "3.1.5",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.6.0"
+  }
+}

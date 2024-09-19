@@ -1,0 +1,27 @@
+# Build
+/dist
+
+# Modules
+/node_modules
+
+# MacOS
+.DS_Store
+
+# Debug Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+tsconfig.tsbuildinfo
+
+# Local Environment Variables
+.env*
+!.env.example
+
+# VS Code Settings
+.vscode/settings.json
+
+# Ignored
+.ignore/
+
+# Prisma DB
+prisma/**/*.db
