@@ -1,0 +1,9 @@
+{
+  "tasks": {
+    "dev": "deno run --watch --allow-net src/main.ts",
+    "start": "deno run --allow-net src/main.ts",
+    "fmt": "deno fmt",
+    "lint": "deno lint",
+    "check": "deno check src/main.ts"
+  }
+}
