@@ -27,41 +27,11 @@ Deno.test("sortCards does not mutate original array", () => {
 });
 
 Deno.test("sortCards sorts a full mixed hand correctly", () => {
-  const hand = [
-    "10S",
-    "2C",
-    "KH",
-    "JD",
-    "3D",
-    "AS",
-    "QH",
-    "QC",
-    "XX",
-    "2H",
-    "AC",
-    "JC",
-    "8D",
-    "7H",
-  ];
+  const hand = ["10S", "2C", "KH", "JD", "3D", "AS", "QH", "QC", "XX", "2H", "AC", "JC", "8D", "7H"];
   const sorted = sortCards([...hand]);
   // In order by rank, then suit. Jokers at the end.
   assertEquals(
     sorted,
-    [
-      "2H",
-      "2C",
-      "3D",
-      "7H",
-      "8D",
-      "10S",
-      "JC",
-      "JD",
-      "QH",
-      "QC",
-      "KH",
-      "AC",
-      "AS",
-      "XX",
-    ],
+    ["2H", "2C", "3D", "7H", "8D", "10S", "JC", "JD", "QH", "QC", "KH", "AC", "AS", "XX"],
   );
 });
